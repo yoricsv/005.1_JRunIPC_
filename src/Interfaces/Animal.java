@@ -1,8 +1,8 @@
 package Interfaces;
 
-public class Animal
+public class Animal implements IGetInfo
 {
-    public int animalId;
+    private int animalId;
 
     public Animal(int id)
     {
@@ -14,4 +14,9 @@ public class Animal
         System.out.println("I'm sleeping!");
     }
 
+    @Override
+    public void showInfo()
+    {
+        System.out.println("Animal ID is:" + this.animalId);
+    }
 }

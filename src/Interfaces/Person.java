@@ -1,8 +1,8 @@
 package Interfaces;
 
-public class Person
+public class Person implements IGetInfo
 {
-    public String name;
+    private String name;
 
     public Person (String name)
     {
@@ -12,5 +12,11 @@ public class Person
     public void sayHello()
     {
         System.out.println("Hello, Everyone!");
+    }
+
+    @Override
+    public void showInfo()
+    {
+        System.out.println("My name is: " + this.name);
     }
 }
