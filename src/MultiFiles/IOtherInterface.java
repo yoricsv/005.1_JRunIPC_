@@ -1,4 +1,6 @@
 package MultiFiles;
 
-public interface IOtherInterface {
+public interface IOtherInterface
+{
+
 }
